@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>ContAct App</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet"> <!-- Quicksand Font-->
     <link rel="stylesheet" type="text/css" href="includes/style.css">
@@ -10,12 +10,14 @@
 <!--First Page-->
 
 <body>
-    <!-- <div id="wrapper"> -->
+    <div id="wrapper">
         <header>
             <section class="logoContainer">
-                <h1 id="title">ContAct</h1>
+                <h1 id="logTitle">ContAct</h1>
                 <article id="logo"></article>
             </section>
+            <article id="hamburger"></article>
+            <input type="search" id="searchBox">
             <nav id="navBar">
                 <ul>
                     <li class="selected">MY EVENTS</li>
@@ -24,14 +26,19 @@
                 </ul>
             </nav>
         </header>
-        <main id="content">
-            <section class="eventContainer">
-
-            </section>
+        <main id="mainContent">
+            <article class="eventIcon"></article>
+            <p>There are no events on your list</p>
+            <input type="button" id="recommendedBtn" value="Our Recommendations">
         </main>
         <footer id="bottomNav">
-
+            <ul>
+                <li id="profileIcon"><h4>Profile</h4><a href="#"></a></li>
+                <li id="eventsIcon"><h4>Events</h4><a href="#"></a></li>
+                <li id="messagesIcon"><h4>Messages</h4><a href="#"></a></li>
+                <li id="BusinessCardsIcon"><h4>Business Cards</h4><a href="#"></a></li>
+            </ul>
         </footer>
-    <!-- </div> -->
+    </div>
 </body>
 </html>

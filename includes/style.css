@@ -4,6 +4,28 @@
     margin: 0px;
 }
 
+@viewport {
+    width: 480px;
+    zoom: 1;
+    }
+
+    #wrapper {
+        width: 480px;
+        height: auto;
+    }
+
+.clear {
+    clear: both;
+}
+
+
+body {
+    background: #333;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    height: auto;
+}
+
 a {
     text-decoration: none;
 }
@@ -18,77 +40,205 @@ ul li {
 
 @media (max-width: 480px) {
 
-    body {
-        width: 480px;
-        background: #142a35;
-    }
-
-    /* #wrapper {
-        margin: 0px auto;
-        width: 464px;
-        height: auto;
-    } */
-
     header {
         position: relative;
         width: 100%;
-        height: 140px;
-        background: #0b557b;
+        height: 120px;
+        background: #006ea9;
     }
 
     .logoContainer {
         position: absolute;
-        top: 16px;
-        width: 90px;
-        height: 70px;
-        left: 16px;
+        width: 100px;
+        height: 50px;
+        padding: 16px;
     }
 
-    #title {
+    #logoTitle {
         position: absolute;
         float: left;
-        width: 90px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 18px;
-        color: #ffffff;
+        font-size: 1.5em;
+        text-align: center;
     }
 
     #logo {
         position: absolute;
         float: left;
-        top: 15px;
-        left: 6px;
-        background: url("../images/logo.png") no-repeat;
+        top: 35px;
         width: 61px;
         height: 60px;
+        background: url("../images/logo.png") no-repeat;
+        margin-left: 18px;
     }
 
     #navBar {
         position: absolute;
-        bottom: 0px;
+        float: left;
         width: 100%;
-        height: 35px;
+        height: 40px;
+        bottom: 0px;
     }
 
     #navBar ul {
-        position: relative;
         width: 100%;
-        height: 35px;
+        height: 40px;
     }
 
     #navBar ul li {
         position: relative;
         float: left;
-        width: auto;
+        top: 15px;
+        width: 33%;
+        font-size: 1em;
+        padding-bottom: 2px;
         height: auto;
-        margin-left: 25px;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 20px;
-        color: #ffffff;
+        text-align: center;
     }
 
     .selected {
-        border-bottom: solid #ffffff 2px;
-        padding-bottom: 6px;
+        border-bottom: solid 3px #fff;
+        color: #fff;
     }
+
+    #hamburger {
+        position: absolute;
+        float: right;
+        right: 16px;
+        top: 16px;
+        width: 60px;
+        height: 60px;
+        background: url("../images/Hamburger.png") no-repeat;
+    }
+
+    #searchBox {
+        position: absolute;
+        float: right;
+        right: 90px;
+        top: 26px;
+        width: 60px;
+        height: 60px;
+        background: url("../images/search.png") no-repeat;
+        border: none;
+    }
+
+    #mainContent {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+
+    .eventIcon {
+        position: relative;
+        top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 178px;
+        height: 168px;
+        background: url("../images/eventsicon.png") no-repeat;
+        
+
+    }
+
+    #mainContent p {
+        position: relative;
+        top: 110px;
+        font-size: 2em;
+        width: 70%;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #recommendedBtn {
+        position: relative;
+        top: 130px;
+        width: 40%;
+        height: 50px;
+        text-align: center;
+        margin-left: 144px;
+        margin-right: 144px;
+        border-radius: 8px;
+        border: solid 2px #fff;
+        background: #006ea9;
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #bottomNav {
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        bottom: 0px;
+        background: #006ea9;
+        opacity: .9;
+    }
+
+    #bottomNav ul {
+        position: relative;
+        width: 100%;
+        height: 80px;
+
+    }
+
+    #bottomNav ul li {
+        position: relative;
+        width: 140px;
+        height: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+        top: 8px;  
+    }
+
+    #bottomNav ul #profileIcon {
+        float: left;
+        position: relative;
+        background: url("../images/profile.png") no-repeat;
+        width: 40px;
+        height: 40px;
+    }
+
+    #bottomNav ul #profileIcon h4 {
+        padding-left: 6px;
+    }
+
+    #bottomNav ul #eventsIcon {
+        float: left;
+        position: relative;
+        background: url("../images/eventsiconbottombar.png") no-repeat;
+        width: 40px;
+        height: 38px;
+    }
+
+    #bottomNav ul #eventsIcon h4 {
+        padding-left: 4px;
+    }
+
+    #bottomNav ul #messagesIcon {
+        float: left;
+        position: relative;
+        background: url("../images/messagesicon.png") no-repeat;
+        width: 40px;
+        height: 38px;
+    }
+
+
+    #bottomNav ul #BusinessCardsIcon {
+        float: left;
+        position: relative;
+        background: url("../images/businesscardsicon.png") no-repeat;
+        width: 40px;
+        height: 40px;
+    }
+
+    h4 {
+        position: absolute;
+        top: 40px;
+        font-size: .6em;
+        text-align: center;
+    }
+
 }
