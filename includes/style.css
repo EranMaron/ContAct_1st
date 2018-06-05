@@ -1,11 +1,10 @@
-
 * {
     padding: 0px;
     margin: 0px;
 }
 
 @viewport {
-    width: 480px;
+    width: 100%;
     zoom: 1;
     }
 
@@ -38,7 +37,7 @@ ul li {
     /***** MOBILE VIEW *****/
     /***********************/
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
     header {
         position: relative;
