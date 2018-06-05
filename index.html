@@ -5,6 +5,10 @@
     <title>ContAct App</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet"> <!-- Quicksand Font-->
     <link rel="stylesheet" type="text/css" href="includes/style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </head>
 
 <!--First Page-->
@@ -16,8 +20,10 @@
                 <h1 id="logTitle">ContAct</h1>
                 <article id="logo"></article>
             </section>
-            <article id="hamburger"></article>
-            <input type="search" id="searchBox">
+            <section class="menuBox">
+                <a href="#"><article id="hamburger"></article></a>
+                <article id="searchIcon"></article>
+            </section>
             <nav id="navBar">
                 <ul>
                     <li class="selected">MY EVENTS</li>
@@ -29,15 +35,27 @@
         <main id="mainContent">
             <article class="eventIcon"></article>
             <p>There are no events on your list</p>
-            <input type="button" id="recommendedBtn" value="Our Recommendations">
+            s
         </main>
         <footer id="bottomNav">
-            <ul>
-                <li id="profileIcon"><h4>Profile</h4><a href="#"></a></li>
-                <li id="eventsIcon"><h4>Events</h4><a href="#"></a></li>
-                <li id="messagesIcon"><h4>Messages</h4><a href="#"></a></li>
-                <li id="BusinessCardsIcon"><h4>Business Cards</h4><a href="#"></a></li>
-            </ul>
+            <section id="footerBox">
+                <section id="profileBox">
+                    <img src="./images/profile.png">
+                    <h5>Profile</h5>
+                </section>
+                <section id="eventsBox">
+                    <img src="./images/eventsiconbottombar.png">
+                    <h5>Events</h5>
+                </section>
+                <section id="messagesBox">
+                    <img src="./images/messagesicon.png">
+                    <h5>Messages</h5>
+                </section>
+                <section id="businessCardsBox">
+                    <img src="./images/businesscardsicon.png">
+                    <h5>Business Cards</h5>
+                </section>
+            </section>
         </footer>
     </div>
 </body>
