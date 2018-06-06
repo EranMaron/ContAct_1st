@@ -12,11 +12,6 @@ header, nav, main, footer, section, article {
     zoom: 1;
     }
 
-    #wrapper {
-        width: 100%;
-        height: auto;
-    }
-
 .clear {
     clear: both;
 }
@@ -25,7 +20,6 @@ header, nav, main, footer, section, article {
 body {
     background: #333;
     font-family: 'Quicksand', sans-serif;
-    font-size: 4vw;
     color: #fff;
     height: auto;
 }
@@ -42,154 +36,80 @@ ul li {
     /***** MOBILE VIEW *****/
     /***********************/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px){
 
-    header{
-        position: fixed;
-        width: 100%;
-        height: 140px;
-        background: #006ea9;
-    }
-
-    .logoContainer {
-        position: relative;
-        float: left;
-        top: 16px;
-        left: 16px;
-        width: 100px;
-        height: 100px;
-    }
-
-    #logo {
-        position: absolute;
+    .navbar-brand {
+        background: url("../images/logo.png") no-repeat;
         width: 61px;
         height: 60px;
-        background: url("../images/logo.png") no-repeat;
-        left: 20px;
+        margin-right: 5px;
     }
 
-    #navBar {
-        position: absolute;
-        float: left;
-        width: 95%;
-        height: 40px;
-        bottom: 0px;
-        margin-left: 16px;
+    .navbar-text {
+        font-size: 30px;
+        margin-right: 20px;
     }
 
-    #navBar ul {
-        width: 100%;
-        height: 40px;
+    #noEventIcon {
+        background: url("../images/eventsicon.png") no-repeat;
+        width: 178px;
+        height: 168px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    #navBar ul .selected {
-        border-bottom: solid 3px #fff;
-        opacity: 1;
-    }
-
-    #navBar ul li {
+    #navnav {
         position: relative;
-        float: left;
-        top: 10px;
-        padding-bottom: 3px;
-        width: 33%;
-        height: auto;
+        top: 25px;
+    }
+
+    .card {
+        background: #333;
+        width: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+        top: 80px;
+        font-size: 1.5rem;
         text-align: center;
-        opacity: .7;
+        border: none;
     }
 
-    .menuBox {
-        position: absolute;
-        float: right;
-        right: 0px;
-        width: 120px;
-        height: 60px;
-        right: 16px;
-        top: 16px;
-    }
-    
-    #hamburger {
-        position: relative;
-        float: right;
-        background: url("../images/Hamburger.png") no-repeat;
-        width: 60px;
-        height: 60px;
-
-    }
-
-    #searchIcon {
-        position: relative;
-        float: left;
-        background: url("../images/search.png") no-repeat;
-        width: 30px;
-        height: 30px;
-        top: 15px;
-    }
-
-    #bottomNav {
+    .sticy-footer {
         position: fixed;
-        bottom: 0px;
+        left: 0;
+        bottom: 0;
         width: 100%;
-        height: 80px;
-        background: #006ea9;
+        height: 60px;
+        background: #007bff
     }
 
-    #footerBox {
-        position: relative;
-        float: left;
-        bottom: 0px;
-        width: 95%;
-        height: 80px;
-        bottom: 0px;
-        margin-left: 12px;;
+    .iconsBox {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-
-    #profileBox {
-        position: relative;
-        float: left;
-        width: auto;
-        height: auto;
-        top: 8px;
-        text-align: center;
-        margin-left: 40px;
+    #profileIcon {
+        margin-left: 15%;
+        margin-top: 16px;
     }
 
-    #eventsBox {
-        position: relative;
-        float: left;
-        width: auto;
-        height: auto;
-        top: 8px;
-        text-align: center;
-        margin-left: 40px;
+    #exampleFormControlSelect1 {
+        width: 40%;
+        padding-left: 2px;
+        margin-left: 5px;
+        margin-top: 4px;
+        font-size: 2vh;
     }
 
-    #messagesBox {
-        position: relative;
-        float: left;
-        width: auto;
-        height: auto;
-        top: 8px;
-        text-align: center;
-        margin-left: 40px;
-    }
-
-    #businessCardsBox {
-        position: relative;
-        float: left;
-        width: auto;
-        height: auto;
-        top: 8px;
-        text-align: center;
-        margin-left: 40px;
-    }
-
-    img {
-        height: 40px;
-    }
-
-    h5 {
-        font-size: 12px;
+    .form-group {
+        margin-left: 5%;
+        margin-top: 5%;
+        width: 100%;
     }
 }
+
+
+
+
+    
