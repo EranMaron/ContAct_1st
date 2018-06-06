@@ -42,12 +42,12 @@ ul li {
         background: url("../images/logo.png") no-repeat;
         width: 61px;
         height: 60px;
-        margin-right: 5px;
     }
 
     .navbar-text {
-        font-size: 30px;
-        margin-right: 20px;
+        position: relative;
+        left: -50px;
+        font-size: 24px;
     }
 
     #noEventIcon {
@@ -61,6 +61,22 @@ ul li {
     #navnav {
         position: relative;
         top: 25px;
+    }
+
+    .dropdown-item {
+        background: #007bff;
+        border: none;
+    }
+
+    .active {
+        background: #333;
+        opacity: .6;
+    }
+
+    #userAvatar {
+        position: relative;
+        float: right;
+        top: 0px;
     }
 
     .card {
@@ -107,9 +123,72 @@ ul li {
         margin-top: 5%;
         width: 100%;
     }
-}
 
 
+/* Recommended Page */
 
+    .eventBox {
+        position: relative;
+        width: 85%;
+        height: 90px;
+        top: 16px;
+        left: 16px;
+        border-bottom: solid 1px #fff;
+    }
+
+    .eventImgList {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #recommendedCardList {
+        width: 100px;
+        height: auto;
+    }
+
+    .eventImg {
+        float: left;
+    }
+
+    .eventTitle {
+        float: left;
+        margin-left: 6px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .eventBox p {
+        position: absolute;
+        left: 208px;
+        top: 30px;
+        font-size: 16px;
+    }
+
+    .eventItem {
+        padding-top: 8px;
+    }
+
+    .signBtn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        background: #007bff url("../images/signupicon.png");
+        right: 10px;
+        bottom: 10px;
+
+    }
+
+    .pageTitle {
+        position: relative;
+        top: 16px;
+        left: 50px;
+        font-size: 18px;
+        border-bottom: solid 2px #fff;
+        width: 130px;
+    }
 
     

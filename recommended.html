@@ -15,6 +15,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top" id="myNavbar">
+        <img id="arrowLeft" src="./images/arrowleft.png">
         <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
             <article class="navbar-toggler-icon"></article>
         </button>
@@ -38,8 +39,8 @@
                     <a class="nav-link dropdown-toggle active" data-toggle="dropdown" data-target="subMenu" href="#">Events</a>
                     <article class="caret"></article>
                     <section class="dropdown-menu" aria-labelledby="subMenu">
-                        <a class="dropdown-item active">My Events</a>
-                        <a class="dropdown-item">Recommended</a>
+                        <a class="dropdown-item">My Events</a>
+                        <a class="dropdown-item active">Recommended</a>
                         <a class="dropdown-item">Populars</a>
                     </section>
                 </li>
@@ -53,14 +54,15 @@
         </section>
     </nav>
     <main id="mainContent">
+        <h3 class="pageTitle">Recommended</h3>
         <form class="form-inline">
             <section class="form-group">
                 <label for="exampleFormControlSelect1">Sort By:</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" value="Event" id="exampleFormControlSelect1">
                     <option>Future Events</option>
                     <option>Past Events</option>
                 </select>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" value="Location" id="exampleFormControlSelect1">
                     <option>Tel-Aviv</option>
                     <option>Haifa</option>
                     <option>Jerusalem</option>
@@ -68,12 +70,57 @@
                 </select>
             </section>
         </form>
-        <section class="card">
-            <article class="img-fluid" id="noEventIcon"></article>
-            <article class="card-body">
-                <p class="card-text">There are no events on your list</p>
-                <a href="#" class="btn btn-primary">Check our Recommendations</a>
-            </article>
+        <section class="eventList">
+            <ul>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event1.jpg"></a>
+                        <h5 class="eventTitle">ReThink Tech</h5><br>
+                        <p>Tortel Enodj abu.</p>
+                        <button class="signBtn"></button>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event2.png"></a>
+                        <h5 class="eventTitle">Tgeu Vteo</h5><br>
+                        <p>Ouogephs toler.</p>
+                        <button class="signBtn"></button>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event3.png"></a>
+                        <h5 class="eventTitle">Cwidhkr</h5><br>
+                        <p>Ejkd Gethjjso.</p>
+                        <button class="signBtn"></button>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event4.png"></a>
+                        <h5 class="eventTitle">MOrqf Gahjfk</h5><br>
+                        <p>Rskj skjd.</p>
+                        <button class="signBtn"></button>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event1.jpg"></a>
+                        <h5 class="eventTitle">ReThink Tech</h5><br>
+                        <p>Tortel Enodj abu.</p>
+                        <button class="signBtn"></button>
+                    </section>
+                </li>
+                <li class="eventItem">
+                    <section class="eventBox">
+                        <a href="#"><img class="eventImg" src="./images/event1.jpg"></a>
+                        <h5 class="eventTitle">ReThink Tech</h5><br>
+                        <p>Tortel Enodj abu.</p>
+                        <button class="signBtn"></button>
+                    </section>
+                </li>
+            </ul>
         </section>
     </main>
     <footer class="sticy-footer">
