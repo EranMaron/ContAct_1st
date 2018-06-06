@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet"> <!-- Quicksand Font-->
     <link rel="stylesheet" type="text/css" href="includes/style.css">
-    <script src="includes/script.js"></script>
+    <!-- <script src="includes/script.js"></script> -->
 </head>
-
-<!--First Page-->
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top" id="myNavbar">
@@ -55,68 +53,30 @@
         </section>
     </nav>
     <main id="mainContent">
-        <h3 class="pageTitle" id="eventPageTitle">Event Page</h3>
+        <h3 class="pageTitle" id="checkOutTitle">CheckOut</h3>
         <section class="eventList">
             <section class="eventBox">
                 <a href="#"><img class="eventImg" src="./images/event1.jpg"></a>
                 <h5 class="eventTitle">ReThink Tech</h5><br>
                 <p>Tortel Enodj abu.</p>
-                <button id="signBtn" class="signBtn" data-toggle="lightbox" data-target="#lightbox"></button>
             </section>
         </section>
-        <section class="eventContent">
-            <h3 class="speakersTitle" id="eventPageDescription">Rethink Tech Conference:</h3>
-            <p class="eventPageParagraph">
-                Contrary to popular belief, Lorem Ipsum 
-                is not simply random text. It has roots in a piece of classical 
-                Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
-            </p>
-            <h3 class="speakersTitle">Speakers:</h3>
-            <section class="media">
-                <img class="align-self-start mr-3" src="./images/speaker1.jpg">
-                <article class="media-body">
-                    <h5 class="mt-0 speakersTitle">Dr. Samuel Jones</h5>
-                    <p>
-                        Contrary to popular belief, Lorem Ipsum 
-                        is not simply random text. It has roots in a piece of classical.
-                    </p>
+        <section class="checkOutPage">
+                <article class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label">Only a Ticket: $60</label>
+                    <article class="col-10">
+                        <input class="form-control" type="number" value="0" id="example-number-input" min="0">
+                    </article>
                 </article>
-            </section>
-            <section class="media">
-                <img class="align-self-start mr-3" src="./images/speaker2.jpg">
-                <article class="media-body">
-                    <h5 class="mt-0 speakersTitle">Dr. Samuel Jones</h5>
-                    <p>
-                        Contrary to popular belief, Lorem Ipsum 
-                        is not simply random text. It has roots in a piece of classical.
-                    </p>
+                <article class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label" id="label" >Ticket+Lunch: $75</label>
+                    <article class="col-10">
+                        <input class="form-control" type="number" value="0" id="example-number-input" min="0">
+                    </article>
                 </article>
-            </section>
-            <section class="media">
-                <img class="align-self-start mr-3" src="./images/speaker3.jpg">
-                <article class="media-body">
-                    <h5 class="mt-0 speakersTitle">Dr. Samuel Jones</h5>
-                    <p>
-                        Contrary to popular belief, Lorem Ipsum 
-                        is not simply random text. It has roots in a piece of classical.
-                    </p>
-                </article>
-            </section>
-            <h3 class="speakersTitle" id="eventPageDescription">Tut sela:</h3>
-            <p class="eventPageParagraph">
-                Contrary to popular belief, Lorem Ipsum 
-                is not simply random text. It has roots in a piece of classical 
-                Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.
-            </p>
-        </section>
-        <section id="lightboxBg">
-            <img id="closeIcon" src="./images/close.png" onclick="closeLightbox()">
-        </section>
-        <section id="lightbox">
-            <h2 >We Are Sorry!<br>There Are No Available Tickets</h2>
-            <p>You will be put on a waiting list</p>
-            <p>In the meanwhile you can check<br>our others events that<br>might interest you</p>
-            <button id="recommendedBtn" type="button" onclick="window.location.href='./recommended.html'">Recommended Events</button>
+            <article class="progress">
+                <article class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</article>
+            </article>
         </section>
     </main>
     <footer class="sticy-footer">
